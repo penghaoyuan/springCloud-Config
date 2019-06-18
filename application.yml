@@ -1,0 +1,14 @@
+﻿spring:
+  profiles:
+    active:
+      -dev
+---
+spring:
+     profiles: dev #开发环境
+       active: springCloud-config-dev
+---
+spring:
+  profiles: test   #c测试环境
+  active: springCloud-config-test
+
+# 请保存为UTF-8格式
